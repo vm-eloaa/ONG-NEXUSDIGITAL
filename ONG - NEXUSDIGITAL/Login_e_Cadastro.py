@@ -33,7 +33,8 @@ def salvar_usuarios(usuarios):
     # Abre o arquivo no modo 'w' (escrita) e sobrescreve o conteúdo
     with open(ARQUIVO_DOS_USUARIOS, 'w') as f:
     # json.dump grava os dados no arquivo com indentação (formatação)
-    json.dump(usuarios, f, indent=4) #alinha um 4 espaços
+       json.dump(usuarios, f, indent=4) 
+    # alinha um 4 espaços
 
 # Função para cadastrar um novo usuário
 def cadastrar_usuario():
@@ -103,7 +104,7 @@ def menu():
         if opcao == '1':
             login()
         elif opcao == '2':
-            cadastrar()
+            cadastrar_usuario()
         elif opcao == '3':
             print("Encerrando o programa.")
             break  # Encerra o laço e sai do programa
